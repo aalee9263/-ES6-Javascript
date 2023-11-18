@@ -17,8 +17,8 @@ let python_score = Number(prompt("Enter score in  python"))
 
 
 let obtained = html_score + css_score + js_score + react_score + python_score
-let percentage = obtained * 500 / 100
-var grade = null
+let percentage = obtained / 500 * 100
+var grade = ""
 
 
 if (percentage >= 90) {
@@ -26,7 +26,7 @@ if (percentage >= 90) {
 }
 
 else if (percentage >= 70){
-    grade = "B+"
+    grade = "A"
 }
 else if (percentage >= 60){
     grade = "B"
@@ -38,7 +38,8 @@ else {
     grade = "Fails"
 }
 
-alert ("You")
+
+alert ("You obtained" + obtained + "Your percentage is" + percentage + "and your grade is" + grade)
     </script>
 </body>
 </html>
