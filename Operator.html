@@ -9,11 +9,36 @@
     
 
     <script>
+let html_score = Number(prompt("Enter score in html "))
+let css_score = Number(prompt("Enter score in  css"))
+let js_score = Number(prompt("Enter score in  js"))
+let react_score =Number(prompt("Enter score in react"))
+let python_score = Number(prompt("Enter score in  python"))
 
 
+let obtained = html_score + css_score + js_score + react_score + python_score
+let percentage = obtained * 500 / 100
+var grade = null
 
 
-        
+if (percentage >= 90) {
+    grade = "A+"
+}
+
+else if (percentage >= 70){
+    grade = "B+"
+}
+else if (percentage >= 60){
+    grade = "B"
+}
+else if (percentage >= 50){
+    grade = "C"
+}
+else {
+    grade = "Fails"
+}
+
+alert ("You")
     </script>
 </body>
 </html>
