@@ -7,11 +7,10 @@
   </head>
   <body>
     <script>
-
-        let student = prompt("Name of Student")
-        let roll = prompt("Roll Number")
-        let course = prompt("Course")
-        let institute = prompt("institute name")
+      let student = prompt("Name of Student");
+      let roll = prompt("Roll Number");
+      let course = prompt("Course");
+      let institute = prompt("institute name");
       let html_score = Number(prompt("Enter score in html "));
       let css_score = Number(prompt("Enter score in  css"));
       let js_score = Number(prompt("Enter score in  js"));
@@ -34,24 +33,28 @@
       } else {
         grade = "Fails";
       }
-////This is concatenation
-    //   <--alert(
-    //     "You obtained" +
-    //       obtained +
-    //       "\nYour percentage is" +
-    //       percentage +
-    //       "\n your grade is" +
-    //       grade
-    //   );-->
-////This is formation mathod
+      ////This is concatenation
+      //   <--alert(
+      //     "You obtained" +
+      //       obtained +
+      //       "\nYour percentage is" +
+      //       percentage +
+      //       "\n your grade is" +
+      //       grade
+      //   );-->
+      ////This is formation mathod
 
       alert(`#######${institute}########
+      ----------------------
       Student Name: ${student}
       Course Title: ${course}
+      Marks: HTML CSS JS REACT PYTHON
+             ${html_score} ${css_score} ${js_score} ${react_score} ${python_score}   
       Roll No: ${roll}
       You have obtained ${obtained}
       You grade is ${grade}
       You percentae is" ${percentage}`);
     </script>
+    
   </body>
 </html>

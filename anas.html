@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+let student = prompt( "Name of Student")
+let roll = prompt( "Roll Number ")
+let course = prompt( "Course ")
+let institute = prompt(" institute name" )
+let htmlscore = Number( prompt( "Enter your score"))
+let cssscore = Number( prompt( "Enter your score"))
+let jsscore = Number( prompt( "Enter your score"))
+let reactscore = Number( prompt( "Enter your score"))
+let pythonscore = Number( prompt( "Enter your score"))
+let obtained = 
+htmlscore + cssscore +jsscore + reactscore + pythonscore
+let percentae = ( obtained / 500) * 100 ;
+var grade = ""
+
+if ( percentae >= 90){
+    grade= "A+";
+}
+else if ( percentae >= 80){
+    grade= "A";
+}
+ else if ( percentae >= 70){
+    grade= "B";
+}
+ else if ( percentae >= 60){
+    grade= "C";
+}
+else if ( percentae >= 50){
+    grade= "D";
+}
+else {
+    grade= "Fails";
+}
+
+
+
+   </script> 
+
+
+</body>
+</html>
