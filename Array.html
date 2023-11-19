@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+//******Array*******
+
+// number of calculation of variables is called array
+/// let....is local scope
+// var....is global scope
+
+let students = ['Nasir Hussain','Arshad Ali','Kaleem Ullah', 'Asad Ullah',]
+
+//indices///         0                  1           2               3
+///singule..index    0                 1           2               3
+// alert(students[3])
+// alert(students[2])
+// alert(students[1])
+// alert(students[0])
+
+//to update....
+
+students[3] ='Saleem Ullah'
+
+//////t
+
+//square bracket shows property
+//concat.. to combine 
+
+console.log(students[0])
+console.log(students[2].toUpperCase())
+console.log(students)
+console.log(students.length)
+console.log(students.concat(['Rehan','Kamran', 'Anas Hidayat']))
+students[0]
+
+//crud operation is....sendng and receiving, update, delete..
+///
+//push for to add
+students.push('Tahir')
+
+students.push('kamran','zeeshan','usman')
+console.log(students)
+//pop sto delete
+students.pop()
+console.log(students)
+///
+
+//pop
+//shift
+//unshift
+//splice.. to add on required index and delete
+//push
+
+students.splice(2,3, 'A', 'B')
+
+console.log(students)
+
+
+students.splice(0,0,'X')
+
+students.splice(5,0,'C')
+
+console.log(students)
+
+students.push('Z')
+
+console.log(students)
+</script>
+</body>
+</html>
