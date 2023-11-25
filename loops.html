@@ -74,7 +74,7 @@
 // }
 // }
 
-//If character starts with "A"
+//If character starts with a specific word"A"
 // let guests=['Rashid', 'Munir', 'Gul', 'Ali', 'Arshad', 'Mati Ul Haq', 'fazlehaqkhairabadi','Momin', 'Rahim']
 
 // for(a=0; a<guests.length; a++){
@@ -83,6 +83,35 @@
 // }
 // }
 
+
+//"==" means just equality,, "===" check also data types
+
+
+// let guests=['Rashid', 'Munir', 'Gul', 'Ali', 'Arshad', 'Mati Ul Haq', 'fazlehaqkhairabadi','Momin', 'Rahim']
+
+// for(a=0; a<guests.length; a++){
+//     if (guests[a][0] === "A") {
+//         console.log (`Mr, ${guests[a]} You are Invited to my wedding Ceremony`)
+// }
+// else{
+//     console.log(`Mr ${guests[a]} not invited`)
+// }
+// }
+
+
+//if particular character end with "specific word"
+
+let guests=['Rashid', 'Munir', 'Gul', 'Ali', 'Arshad', 'Mati Ul Haq', 'fazlehaqkhairabadi','Momin', 'Rahim']
+
+for(a=0; a<guests.length; a++){
+    if ((guests[a].endsWith('D')) || guests[a].startsWith('l')) {
+        console.log (`Mr, ${guests[a]} You are Invited to my wedding Ceremony`)
+}
+else{
+    console.log(`Mr ${guests[a]} not invited`)
+}
+}
+//if particular character end with "specific word"
 
 // let guests=['Rashid', 'Munir', 'Gul', 'Ali', 'Arshad', 'Mati Ul Haq', 'fazlehaqkhairabadi','Momin', 'Rahim']
 
@@ -96,17 +125,15 @@
 // }
 
 
-let guests=['Rashid', 'Munir', 'Gul', 'Ali', 'Arshad', 'Mati Ul Haq', 'fazlehaqkhairabadi','Momin', 'Rahim']
 
-for(a=0; a<guests.length; a++){
-    if (guests[a].startsWith('G','M',)) {
-        console.log (`Mr, ${guests[a]} You are Invited to my wedding Ceremony`)
+let text = propmt("Enter Your text here")
+for(let a=0; a<text.length; a++){
+    
+    if(text[a]=='')
 }
-else{
-    console.log(`Mr ${guests[a]} not invited`)
-}
-}
-
+console.log(`the number of character in you your text are: ${text.length}`)
+console.log(`the number of words in you your text are: ${text.split("").length
+}`)
 
     </script>
 </body>
