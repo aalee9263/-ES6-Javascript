@@ -37,10 +37,28 @@ let temp = [28, 31, 26, 27, 29, 32, 25, 27]
 
 for (i=0; i<temp.length; i++){
 
-    temp[i] = temp[i] * 2
-    console.log(temp[i]);
+    // temp[i] = temp[i] * 2
+
+    // formula for degree to farenheight  ____ * (9/5) + 32
+    
+// temp[i] = (temp[i] * (9/5)) + 32
+
+    // console.log(temp[i]);
 }
 
+// developer has developd a short code for array == called map
+
+// this does not change in the original array. it does just clone the array
+
+let fahrenheit = temp.map((eachItem, i)=>{
+
+    return ((eachItem * (1.8) + 32))
+
+}
+) 
+
+console.log("temp;", temp)
+console.log("fahrenheit;", fahrenheit)
 //     </script>
     
 
